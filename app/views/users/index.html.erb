@@ -1,0 +1,10 @@
+<ul id="users-list">
+  <% if @users.present? %>
+    <% @users.each do |user| %>
+      <li>
+        <span><%= user.name %></span>
+        <button class="fetch-details" data-id="<%= user.id %>">Details</button>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

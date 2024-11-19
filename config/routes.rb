@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index, :show]
-
-  root 'users#index'
+  root 'books#index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
